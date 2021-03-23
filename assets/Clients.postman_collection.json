@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "e68ad080-ca19-4cb7-a16e-d2a4aca267e0",
+		"name": "Clients",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/NutriNET/Cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"NutriNET",
+						"Cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Clients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/NutriNET/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"NutriNET",
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Client",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Nombre\": \"Alejandro\",\n    \"Apellidos\": \"Ortiz Pablo\",\n    \"Nombre_Usuario\": \"Alex1\",\n    \"Correo_Electronico\": \"ale1@hotmail.com\",\n    \"Contraseña\": \"alex123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1323/NutriNET/Cliente",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"NutriNET",
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Client",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Edad\": 39,\n    \"Estatura\": 1.80,\n    \"Peso\": 60,\n    \"GEB\": 1500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1323/NutriNET/Cliente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"NutriNET",
+						"Cliente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
